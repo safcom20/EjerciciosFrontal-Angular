@@ -1,0 +1,15 @@
+<H2>EJERCICIO 1</H2>
+<div *ngFor="let product of products">
+  {{ product.name }}
+</div>
+<button (click)="mostrarPorConsola()">Mostrar Por Consola</button>
+
+<h2>EJERCICIO 2</h2>
+
+<button (click)="mostrarPorEventoDeBoton()">Mostrar Lista</button>
+
+<div *ngIf="transaccion">
+  <div *ngFor="let datoContribuyente of lista">
+    {{ datoContribuyente.nombre }}
+  </div>
+</div>
